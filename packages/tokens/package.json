@@ -10,6 +10,7 @@
     "dev": "tsup src/index.ts --watch --format esm,cjs --dts"
   },
   "devDependencies": {
+    "@ignite-ui/ts-config": "*",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   }
