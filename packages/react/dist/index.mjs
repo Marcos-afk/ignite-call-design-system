@@ -104,5 +104,11 @@ var space = {
   80: "20rem"
 };
 
-// src/index.ts
-console.log(colors_exports);
+// src/index.tsx
+import { jsx } from "react/jsx-runtime";
+var App = () => {
+  return /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx("h1", { style: { color: colors_exports.colors.gray700 }, children: "Hello, world!" }) });
+};
+export {
+  App
+};

@@ -1,13 +1,37 @@
 "use strict";
-
-// ../tokens/dist/index.mjs
 var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+// src/index.tsx
+var src_exports = {};
+__export(src_exports, {
+  App: () => App
+});
+module.exports = __toCommonJS(src_exports);
+
+// ../tokens/dist/index.mjs
+var __defProp2 = Object.defineProperty;
+var __export2 = (target, all) => {
+  for (var name in all)
+    __defProp2(target, name, { get: all[name], enumerable: true });
+};
 var colors_exports = {};
-__export(colors_exports, {
+__export2(colors_exports, {
   colors: () => colors
 });
 var colors = {
@@ -27,7 +51,7 @@ var colors = {
   ignite900: "#00291D"
 };
 var font_sizes_exports = {};
-__export(font_sizes_exports, {
+__export2(font_sizes_exports, {
   fontSizes: () => fontSizes
 });
 var fontSizes = {
@@ -46,7 +70,7 @@ var fontSizes = {
   "9xl": "6rem"
 };
 var font_weights_exports = {};
-__export(font_weights_exports, {
+__export2(font_weights_exports, {
   fontWeights: () => fontWeights
 });
 var fontWeights = {
@@ -55,7 +79,7 @@ var fontWeights = {
   bold: "700"
 };
 var fonts_exports = {};
-__export(fonts_exports, {
+__export2(fonts_exports, {
   fonts: () => fonts
 });
 var fonts = {
@@ -63,7 +87,7 @@ var fonts = {
   code: "monospace"
 };
 var line_heights_exports = {};
-__export(line_heights_exports, {
+__export2(line_heights_exports, {
   lineHeights: () => lineHeights
 });
 var lineHeights = {
@@ -73,7 +97,7 @@ var lineHeights = {
   tall: "180%"
 };
 var radii_exports = {};
-__export(radii_exports, {
+__export2(radii_exports, {
   radii: () => radii
 });
 var radii = {
@@ -85,7 +109,7 @@ var radii = {
   full: "99999px"
 };
 var space_exports = {};
-__export(space_exports, {
+__export2(space_exports, {
   space: () => space
 });
 var space = {
@@ -106,5 +130,12 @@ var space = {
   80: "20rem"
 };
 
-// src/index.ts
-console.log(colors_exports);
+// src/index.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
+var App = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { style: { color: colors_exports.colors.gray700 }, children: "Hello, world!" }) });
+};
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  App
+});

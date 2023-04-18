@@ -1,2 +1,3 @@
+declare const App: () => JSX.Element;
 
-export { }
+export { App };
