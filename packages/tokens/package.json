@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.ts",
   "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch --format esm,cjs --dts"
+  },
   "devDependencies": {
+    "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   }
 }
