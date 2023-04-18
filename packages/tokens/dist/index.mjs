@@ -1,14 +1,4 @@
-var __defProp = Object.defineProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-
 // src/colors.ts
-var colors_exports = {};
-__export(colors_exports, {
-  colors: () => colors
-});
 var colors = {
   white: "#FFF",
   black: "#000",
@@ -27,10 +17,6 @@ var colors = {
 };
 
 // src/font-sizes.ts
-var font_sizes_exports = {};
-__export(font_sizes_exports, {
-  fontSizes: () => fontSizes
-});
 var fontSizes = {
   xxs: "0.625rem",
   xs: "0.75rem",
@@ -48,10 +34,6 @@ var fontSizes = {
 };
 
 // src/font-weights.ts
-var font_weights_exports = {};
-__export(font_weights_exports, {
-  fontWeights: () => fontWeights
-});
 var fontWeights = {
   regular: "400",
   medium: "500",
@@ -59,20 +41,12 @@ var fontWeights = {
 };
 
 // src/fonts.ts
-var fonts_exports = {};
-__export(fonts_exports, {
-  fonts: () => fonts
-});
 var fonts = {
   default: "Roboto, sans-serif",
   code: "monospace"
 };
 
 // src/line-heights.ts
-var line_heights_exports = {};
-__export(line_heights_exports, {
-  lineHeights: () => lineHeights
-});
 var lineHeights = {
   shorter: "125%",
   short: "140%",
@@ -81,10 +55,6 @@ var lineHeights = {
 };
 
 // src/radii.ts
-var radii_exports = {};
-__export(radii_exports, {
-  radii: () => radii
-});
 var radii = {
   px: "1px",
   xs: "4px",
@@ -95,10 +65,6 @@ var radii = {
 };
 
 // src/space.ts
-var space_exports = {};
-__export(space_exports, {
-  space: () => space
-});
 var space = {
   1: "0.25rem",
   2: "0.5rem",
@@ -117,11 +83,11 @@ var space = {
   80: "20rem"
 };
 export {
-  colors_exports as colors,
-  font_sizes_exports as fontSizes,
-  font_weights_exports as fontWeights,
-  fonts_exports as fonts,
-  line_heights_exports as lineHeights,
-  radii_exports as radii,
-  space_exports as space
+  colors,
+  fontSizes,
+  fontWeights,
+  fonts,
+  lineHeights,
+  radii,
+  space
 };

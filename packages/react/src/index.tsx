@@ -1,9 +1,15 @@
-import { colors } from '@ignite-ui/tokens'
+import { styled } from './styles'
+
+const Container = styled('div', {
+  flex: 1,
+  background: '$gray900',
+  color: '$gray200',
+})
 
 export const App = () => {
   return (
-    <div>
-      <h1 style={{ color: colors.colors.gray700 }}>Hello, world!</h1>
-    </div>
+    <Container>
+      <h1>Hello, world!</h1>
+    </Container>
   )
 }

@@ -20,21 +20,17 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  colors: () => colors_exports,
-  fontSizes: () => font_sizes_exports,
-  fontWeights: () => font_weights_exports,
-  fonts: () => fonts_exports,
-  lineHeights: () => line_heights_exports,
-  radii: () => radii_exports,
-  space: () => space_exports
+  colors: () => colors,
+  fontSizes: () => fontSizes,
+  fontWeights: () => fontWeights,
+  fonts: () => fonts,
+  lineHeights: () => lineHeights,
+  radii: () => radii,
+  space: () => space
 });
 module.exports = __toCommonJS(src_exports);
 
 // src/colors.ts
-var colors_exports = {};
-__export(colors_exports, {
-  colors: () => colors
-});
 var colors = {
   white: "#FFF",
   black: "#000",
@@ -53,10 +49,6 @@ var colors = {
 };
 
 // src/font-sizes.ts
-var font_sizes_exports = {};
-__export(font_sizes_exports, {
-  fontSizes: () => fontSizes
-});
 var fontSizes = {
   xxs: "0.625rem",
   xs: "0.75rem",
@@ -74,10 +66,6 @@ var fontSizes = {
 };
 
 // src/font-weights.ts
-var font_weights_exports = {};
-__export(font_weights_exports, {
-  fontWeights: () => fontWeights
-});
 var fontWeights = {
   regular: "400",
   medium: "500",
@@ -85,20 +73,12 @@ var fontWeights = {
 };
 
 // src/fonts.ts
-var fonts_exports = {};
-__export(fonts_exports, {
-  fonts: () => fonts
-});
 var fonts = {
   default: "Roboto, sans-serif",
   code: "monospace"
 };
 
 // src/line-heights.ts
-var line_heights_exports = {};
-__export(line_heights_exports, {
-  lineHeights: () => lineHeights
-});
 var lineHeights = {
   shorter: "125%",
   short: "140%",
@@ -107,10 +87,6 @@ var lineHeights = {
 };
 
 // src/radii.ts
-var radii_exports = {};
-__export(radii_exports, {
-  radii: () => radii
-});
 var radii = {
   px: "1px",
   xs: "4px",
@@ -121,10 +97,6 @@ var radii = {
 };
 
 // src/space.ts
-var space_exports = {};
-__export(space_exports, {
-  space: () => space
-});
 var space = {
   1: "0.25rem",
   2: "0.5rem",
