@@ -1,0 +1,12 @@
+{
+  "name": "ignite-call",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/Marcos-afk/ignite-call.git",
+  "author": "Marcos André <72817154+Marcos-afk@users.noreply.github.com>",
+  "license": "MIT"
+}
