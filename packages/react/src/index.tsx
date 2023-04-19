@@ -1,15 +1,29 @@
 import { styled } from './styles'
+import { ComponentProps } from 'react'
 
-const Container = styled('div', {
-  flex: 1,
-  background: '$gray900',
-  color: '$gray200',
+export const Button = styled('button', {
+  fontFamily: '$default',
+  background: '$ignite500',
+  borderRadius: '$sm',
+  padding: '$2 $4',
+  fontWeight: '$bold',
+  color: '$white',
+
+  variants: {
+    size: {
+      small: {
+        fontSize: 14,
+        padding: '$2 $4',
+      },
+      big: {
+        fontSize: 16,
+        padding: '$3 $6',
+      },
+    },
+  },
+  defaultVariants: {
+    size: 'small',
+  },
 })
 
-export const App = () => {
-  return (
-    <Container>
-      <h1>Hello, world!</h1>
-    </Container>
-  )
-}
+export type ButtonProps = ComponentProps<typeof Button>
