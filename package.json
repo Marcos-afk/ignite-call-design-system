@@ -9,8 +9,13 @@
   "repository": "https://github.com/Marcos-afk/ignite-call.git",
   "author": "Marcos André <72817154+Marcos-afk@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
+  },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
-    "eslint": "^8.38.0"
+    "eslint": "^8.38.0",
+    "turbo": "^1.9.3"
   }
 }
