@@ -23,8 +23,10 @@
     "vite": "^4.2.2"
   },
   "dependencies": {
+    "@ignite-ui/ts-config": "*",
+    "@ignite-ui/eslint-config": "*",
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
-    "@ignite-ui/eslint-config": "*"
+    "polished": "^4.2.2"
   }
 }
