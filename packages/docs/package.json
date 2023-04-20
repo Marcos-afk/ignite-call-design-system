@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.0.6",
@@ -28,6 +29,7 @@
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "@ignite-ui/ts-config": "*",
+    "@storybook/storybook-deployer": "^2.8.16",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2"
   }
