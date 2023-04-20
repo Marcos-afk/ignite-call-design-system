@@ -18,8 +18,9 @@ const config = {
     if (configType === 'PRODUCTION') {
       config.base = '/ignite-call/'
     }
-    
+
     return config
+  }
 };
 export default config;
 
