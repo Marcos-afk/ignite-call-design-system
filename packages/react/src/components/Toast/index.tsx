@@ -6,7 +6,7 @@ import * as T from '@radix-ui/react-toast'
 import { ptBR } from 'date-fns/locale'
 import { Button } from '../Button'
 
-export interface ToastProps extends ComponentProps<typeof S.Container> {}
+export interface ToastProps extends ComponentProps<typeof T.Provider> {}
 
 export const Toast = () => {
   const [loading, setLoading] = useState(false)
