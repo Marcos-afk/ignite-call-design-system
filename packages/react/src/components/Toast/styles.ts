@@ -1,5 +1,23 @@
 import * as Toast from '@radix-ui/react-toast'
-import { styled } from '../../styles'
+import { styled, keyframes } from '../../styles'
+
+const slideIn = keyframes({
+  from: {
+    transform: 'translateX(calc(100% + $space$2))',
+  },
+  to: {
+    transform: 'translateX(0)',
+  },
+})
+
+const slideOut = keyframes({
+  from: {
+    transform: 'translateX(0)',
+  },
+  to: {
+    transform: 'translateX(calc(100% + $space$2))',
+  },
+})
 
 export const Container = styled(Toast.Root, {
   display: 'flex',
@@ -8,6 +26,13 @@ export const Container = styled(Toast.Root, {
   background: '$gray600',
   padding: '$3 $5',
   borderRadius: '$sm',
+
+  '&[data-state="open"]': {
+    animation: `${slideIn} 150ms ease-out`,
+  },
+  '&[data-state="closed"]': {
+    animation: `${slideOut} 100ms ease-in`,
+  },
 })
 
 export const Title = styled(Toast.Title, {
